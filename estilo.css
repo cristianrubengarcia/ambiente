@@ -1,0 +1,129 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fdf4; /* Verde claro */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Formulario general */
+form {
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    padding: 25px 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    max-width: 400px; /* Ajuste de ancho */
+    width: 90%; /* Responsivo */
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* Estilos de etiquetas */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2d572c; /* Verde oscuro */
+}
+
+/* Estilos de campos de entrada */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="int"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+form input::placeholder {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+/* Botones */
+form button,
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #8bc34a; /* Verde claro */
+    border: none;
+    border-radius: 20px; /* Botones redondeados */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #76b047; /* Verde más oscuro al pasar el cursor */
+}
+
+form button:active,
+form input[type="submit"]:active {
+    background-color: #629d3a; /* Verde oscuro al hacer clic */
+    transform: scale(0.98); /* Efecto al presionar */
+}
+
+/* Mensajes de error o confirmación */
+form p {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
